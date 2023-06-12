@@ -14,8 +14,8 @@ export class MfLoaderComponent implements OnInit {
   async ngOnInit() {
     this.placeholderVC.clear();
     const component = await
-        loadRemoteModule('login', './Hello');
+        loadRemoteModule('login', './Component');
     console.log('component', component);
-    this.placeholderVC.createComponent(component.HelloWorldComponent);
+    this.placeholderVC.createComponent(component.RemoteEntryComponent);
   }
 }
